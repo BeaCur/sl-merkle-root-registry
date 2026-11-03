@@ -13,6 +13,7 @@ Zenroom (Zencode and lua) transactions that call the `MerkleRootRegistry` smart 
 2. `*.zen`: Zencode files, one per "When"
 3. `*.json`: input data for each transaction
 4. `*_out.json`: signed transaction, already sent to the testnet
+5. `transfer_ownership_back*`: ownership transferred back to the previous owner 
 
 ## How to run
 Sign a transaction with Zenroom, using a keyring file with the private key (never commit it):
