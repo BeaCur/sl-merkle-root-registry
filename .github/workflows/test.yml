@@ -20,7 +20,7 @@ jobs:
       - uses: foundry-rs/foundry-toolchain@v1
         with: { version: stable }
       - name: build contract
-        run: forge build --evm-version istanbul
+        run: forge build
       - name: Install Zenroom
         run: |
           # download zenroom
@@ -61,7 +61,7 @@ jobs:
       - uses: foundry-rs/foundry-toolchain@v1
         with: { version: stable }
       - name: build contract
-        run: forge build --evm-version istanbul
+        run: forge build
       - name: Install Zenroom
         run: |
           # download zenroom
