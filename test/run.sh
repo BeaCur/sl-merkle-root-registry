@@ -89,12 +89,6 @@ cast call "$CONTRACT" 'activeRoot()(bytes32)' --rpc-url "$RPC_URL" \
 echo "PASS: setActiveRoot"
 
 
-# Test containsLeafHash?
-LEAF0=0x0693e6761b37d88d77eb11e42e2fed1452bc5aa8a1566f5d5e4ec3c123e5aa04
-LEAF1=0x015bf386477e7948a51fd27848739f156fb2bb3907e62c326d90f5f71d07e858
-WRONG=0x0693e6761b37d88d77eb11e42e2fed1452bc5aa8a1566f5d5e4ec3c123e5aa88
-
-
 # Test transferOwnership
 NONCE=$(cast nonce "$ADDR" --rpc-url "$RPC_URL")
 sed "s/chain '222'/chain '$CHAIN_ID'/" transfer_ownership.zen > "$TEMP/transfer_ownership.zen"
